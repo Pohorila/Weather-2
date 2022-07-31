@@ -1,0 +1,72 @@
+.container {
+  margin-top: 20px;
+  border: 1px solid;
+}
+body {
+  font-family: "Joan", serif;
+  font-family: "Roboto", sans-serif;
+}
+.city {
+  display: block;
+  margin: 20px auto;
+  padding: 0 50px;
+}
+placeholder {
+  text-align: left;
+}
+.search {
+  color: green;
+  background-color: #fff;
+  padding: 5px 20px;
+  display: block;
+  margin: 20px auto;
+  border-color: green;
+  font-size: 15px;
+  font-weight: 900;
+}
+h1 {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+h2 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 0px;
+}
+.col,
+.card-body,
+.col-sm-2 {
+  text-align: center;
+  font-weight: 1000;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+h4 {
+  color: green;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+h5 {
+  color: green;
+}
+.future {
+  position: relative;
+  left: 100px;
+  right: 40px;
+  margin-bottom: 20px;
+}
+.fa-sun,
+.fa-bolt {
+  color: yellow;
+}
+.fa-solid {
+  font-size: 20px;
+}
+.main {
+  font-size: 32px;
+  margin-top: 10px;
+}
