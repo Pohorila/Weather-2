@@ -1,8 +1,19 @@
+function showTemperature(response) {
+  document.querySelector("#cityname").innerHTML = response.data.name;
+  document.querySelector("#current-temperature").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+}
 function showCity(event) {
   event.preventDefault();
-  let cityInput = document.querySelector("#city");
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = `${cityInput.value}`;
+  let apiKey = "be02bf48bb091676d48ceae50ec17b7a";
+  let city = document.querySelector("#city").value;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
 }
 let now = new Date();
 let h2 = document.querySelector("h2");
