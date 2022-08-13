@@ -38,9 +38,13 @@ h2 {
 }
 .col,
 .card-body,
-.col-sm-2 {
+.col-sm-2,
+.description {
   text-align: center;
   font-weight: 1000;
+}
+.description::first-letter {
+  text-transform: capitalize;
 }
 h3 {
   text-align: center;
