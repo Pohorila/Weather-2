@@ -1,4 +1,5 @@
 function showTemperature(response) {
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#cityname").innerHTML = response.data.name;
   document.querySelector("#current-temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -9,7 +10,7 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-  document.setAttribute("#icon", `http//openweathermap.org/img/wn/04d@2x.png`);
+  iconElement.setAttribute("src", `http//openweathermap.org/img/wn/04d@2x.png`);
 }
 function showCity(event) {
   event.preventDefault();
