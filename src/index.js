@@ -33,7 +33,7 @@ function showForecast() {
             <div class="col-sm-2">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Mon</h5>
+                <h5 class="card-title">${day}</h5>
                 <p class="card-text">22°С</p>
                 <br />
                 <img
