@@ -59,10 +59,8 @@ h3 {
   color: green;
 }
 .future {
-  position: relative;
-  left: 100px;
-  right: 40px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 .fa-sun,
 .fa-bolt {
