@@ -24,21 +24,22 @@ function showCity(event) {
   axios.get(apiUrl).then(showTemperature);
 }
 function showForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (day) {
+  days.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
             <div class="col-sm-2">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">${day}</h5>
-                <p class="card-text">22°С</p>
+                <h5 class="card-title">${forecastDay.dt}</h5>
+                <p class="card-text">${forecastDay.temp.max}°С</p>
                 <br />
                 <img
-                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                   alt=""
                   width="42"
                 />
